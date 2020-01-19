@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3940916E-0CFD-4AF6-A36E-3206123C3F53}</ProjectGuid>
+    <RootNamespace>Ajedrez</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BGI\bgiout.cxx" />
+    <ClCompile Include="BGI\dibutil.cxx" />
+    <ClCompile Include="BGI\drawing.cxx" />
+    <ClCompile Include="BGI\file.cxx" />
+    <ClCompile Include="BGI\misc.cxx" />
+    <ClCompile Include="BGI\mouse.cxx" />
+    <ClCompile Include="BGI\palette.cxx" />
+    <ClCompile Include="BGI\text.cxx" />
+    <ClCompile Include="BGI\winbgi.cxx" />
+    <ClCompile Include="BGI\winthread.cxx" />
+    <ClCompile Include="cartel.cpp" />
+    <ClCompile Include="celda.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="marco.cpp" />
+    <ClCompile Include="tablero.cpp" />
+    <ClCompile Include="juego.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="Piezas\alfil.cpp" />
+    <ClCompile Include="Piezas\caballo.cpp" />
+    <ClCompile Include="Piezas\peon.cpp" />
+    <ClCompile Include="Piezas\pieza.cpp" />
+    <ClCompile Include="Piezas\reina.cpp" />
+    <ClCompile Include="Piezas\rey.cpp" />
+    <ClCompile Include="Piezas\torre.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BGI\dibapi.h" />
+    <ClInclude Include="BGI\dibutil.h" />
+    <ClInclude Include="BGI\graphics.h" />
+    <ClInclude Include="BGI\winbgi.h" />
+    <ClInclude Include="BGI\winbgim.h" />
+    <ClInclude Include="BGI\winbgitypes.h" />
+    <ClInclude Include="cartel.h" />
+    <ClInclude Include="celda.h" />
+    <ClInclude Include="com.h" />
+    <ClInclude Include="juego.h" />
+    <ClInclude Include="marco.h" />
+    <ClInclude Include="tablero.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="Piezas\alfil.h" />
+    <ClInclude Include="Piezas\caballo.h" />
+    <ClInclude Include="Piezas\peon.h" />
+    <ClInclude Include="Piezas\pieza.h" />
+    <ClInclude Include="Piezas\reina.h" />
+    <ClInclude Include="Piezas\rey.h" />
+    <ClInclude Include="Piezas\torre.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
